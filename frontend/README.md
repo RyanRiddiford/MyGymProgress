@@ -1,70 +1,75 @@
-# Getting Started with Create React App
+# My Gym Progress
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Overview
 
-## Available Scripts
+"My Gym Progress" is a comprehensive solution designed to track and analyze gym progress through a web application and a companion Android app. The project integrates a React-based frontend, an ASP.NET Core backend, and an Android application, offering a multi-platform approach to manage and visualize fitness data efficiently.
 
-In the project directory, you can run:
+## Tech Stack
 
-### `npm start`
+- **Frontend**: React (JavaScript)
+- **Backend**: ASP.NET Core (C#)
+- **Mobile Application**: Android (Java/Kotlin)
+- **Database**: [Placeholder for database technology]
+- **Hosting/Deployment**: [Placeholder for hosting services and deployment strategies]
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+## Planned Features
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+### Web Application
+- User authentication to manage access and secure user data.
+- Dashboard for displaying current fitness metrics and progress graphs.
+- Ability to input and modify workout data manually.
+- Export and import functionalities for data backup and restoration in CSV format.
 
-### `npm test`
+### Android Application
+- Background service to automatically detect and upload new `.csv` files exported from the "Strong" gym-tracking app.
+- Notifications to remind users to log their workouts if not detected by the end of the day.
+- Data synchronization with the web application to keep all devices up-to-date.
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Backend
+- RESTful API to handle requests from both the web and mobile applications.
+- Secure storage and management of user data and workout logs.
+- Integration with third-party services for enhanced data analysis (e.g., machine learning for predicting fitness trends).
 
-### `npm run build`
+## Suggested Features (Lower Priority)
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### Social Features
+- Ability for users to share their progress on social media or within the app's community.
+- Leaderboards and challenges to encourage user engagement and friendly competition.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### Enhanced Data Analysis
+- Integration of more complex data analysis tools for detailed reporting and predictions (e.g., expected progress, optimal workout suggestions based on past performance).
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Wearable Integration
+- Support for syncing data directly from fitness trackers and smartwatches to provide real-time workout tracking and analysis.
 
-### `npm run eject`
+## Development & Running Instructions
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Frontend (React)
+- Navigate to the `frontend` directory.
+- Install dependencies: `npm install`.
+- Run locally: `npm start`. Access at `http://localhost:3000`.
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+### Backend (ASP.NET Core)
+- Navigate to the `backend` directory.
+- Build the project: `dotnet build`.
+- Run locally: `dotnet run`. The API will be available at `http://localhost:5000`.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Android Application
+- Open the project in Android Studio.
+- Build the project using Android Studio’s build tools.
+- Run on a physical device or emulator.
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+## Live Links
 
-## Learn More
+- **Web Application**: [Placeholder for live link to the web application]
+- **API Documentation**: [Placeholder for link to API documentation or Swagger UI]
+- **Download Android App**: [Placeholder for link to Android app APK or Google Play Store]
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+## Documentation & Resources
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+- Comprehensive documentation is available at [Placeholder for link to documentation].
+- For more detailed setup instructions, visit [Placeholder for link to setup guide or Wiki].
 
-### Code Splitting
+## Conclusion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+"My Gym Progress" is designed to be a robust and flexible solution for gym enthusiasts who wish to meticulously track and analyze their fitness journey. The combination of a web application, backend services, and a mobile application ensures that users have access to their data across multiple devices, providing a seamless and integrated experience.
