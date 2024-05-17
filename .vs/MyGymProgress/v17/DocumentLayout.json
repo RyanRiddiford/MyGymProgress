@@ -1,0 +1,149 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "H:\\Personal Repo\\MyGymProgress\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\backend.csproj||{04B8AB82-A572-4FEF-95CE-5222444B6B64}|"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\routes\\trainingroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\routes\\trainingroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\backend.http||{5703B403-55E7-4C63-8C88-A8F52C7A45C5}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\data\\models\\trainingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\data\\models\\trainingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|h:\\personal repo\\mygymprogress\\backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{0C168229-0DE3-47EF-A13B-BABB4A65BBD2}|backend\\backend.csproj|solutionrelative:backend\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 1,
+          "Children": [
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "backend",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\backend.csproj",
+              "RelativeDocumentMoniker": "backend\\backend.csproj",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\backend.csproj",
+              "RelativeToolTip": "backend\\backend.csproj",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000758|",
+              "WhenOpened": "2024-05-16T07:05:25.237Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\Program.cs",
+              "RelativeDocumentMoniker": "backend\\Program.cs",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\Program.cs",
+              "RelativeToolTip": "backend\\Program.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABYAAAARAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T06:06:21.73Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "TrainingRoute.cs",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\Routes\\TrainingRoute.cs",
+              "RelativeDocumentMoniker": "backend\\Routes\\TrainingRoute.cs",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\Routes\\TrainingRoute.cs",
+              "RelativeToolTip": "backend\\Routes\\TrainingRoute.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAFAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T06:05:50.267Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDbContext.cs",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\Data\\AppDbContext.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\AppDbContext.cs",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\Data\\AppDbContext.cs",
+              "RelativeToolTip": "backend\\Data\\AppDbContext.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABAAAABGAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T05:55:20.667Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "TrainingSession.cs",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\Data\\Models\\TrainingSession.cs",
+              "RelativeDocumentMoniker": "backend\\Data\\Models\\TrainingSession.cs",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\Data\\Models\\TrainingSession.cs",
+              "RelativeToolTip": "backend\\Data\\Models\\TrainingSession.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAACoAAAAeAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T05:53:26.031Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "backend.http",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\backend.http",
+              "RelativeDocumentMoniker": "backend\\backend.http",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\backend.http",
+              "RelativeToolTip": "backend\\backend.http",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAoAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003502|",
+              "WhenOpened": "2024-05-16T05:48:48.009Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\appsettings.json",
+              "RelativeDocumentMoniker": "backend\\appsettings.json",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\appsettings.json",
+              "RelativeToolTip": "backend\\appsettings.json",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAgAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2024-05-16T05:44:49.248Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "TrainingController.cs",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\backend\\Controllers\\TrainingController.cs",
+              "RelativeDocumentMoniker": "backend\\Controllers\\TrainingController.cs",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\backend\\Controllers\\TrainingController.cs",
+              "RelativeToolTip": "backend\\Controllers\\TrainingController.cs",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAAAZAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-05-16T05:36:35.293Z"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

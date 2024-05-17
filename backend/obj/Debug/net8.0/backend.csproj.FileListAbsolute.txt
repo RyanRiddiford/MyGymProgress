@@ -1,0 +1,8 @@
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.csproj.AssemblyReference.cache
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.GeneratedMSBuildEditorConfig.editorconfig
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.AssemblyInfoInputs.cache
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.AssemblyInfo.cs
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.csproj.CoreCompileInputs.cache
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cs
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.MvcApplicationPartsAssemblyInfo.cache
+H:\Personal Repo\MyGymProgress\backend\obj\Debug\net8.0\backend.sourcelink.json
