@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace MyGymProgressApi.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    [Migration("20240517083723_InitialCreate")]
+    [Migration("20240519052033_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -58,7 +58,7 @@ namespace MyGymProgressApi.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 5, 17, 8, 37, 23, 155, DateTimeKind.Utc).AddTicks(5820),
+                            Date = new DateTime(2024, 5, 19, 5, 20, 33, 263, DateTimeKind.Utc).AddTicks(5720),
                             Notes = "Full body workout focusing on form",
                             WorkoutDuration = "1 hour",
                             WorkoutName = "Full Body Routine",

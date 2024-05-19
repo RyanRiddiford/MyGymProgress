@@ -47,7 +47,7 @@ namespace MyGymProgressApi.Controllers
         }
 
         // GET: api/Training/5
-        [HttpGet("{id}")]
+        //[HttpGet("{id}")]
         public async Task<ActionResult<TrainingSession>> Get(int id)
         {
             var training = await _appDbContext.TrainingSessions.Include(ts => ts.Exercises).FirstOrDefaultAsync(ts => ts.Id == id);
@@ -72,7 +72,8 @@ namespace MyGymProgressApi.Controllers
                 MissingFieldFound = null,
                 HeaderValidated = null,
                 Delimiter = ";",
-                IgnoreBlankLines = true
+                IgnoreBlankLines = true,
+                PrepareHeaderForMatch = args => args.Header.Replace(" ", "")
             };
 
             try

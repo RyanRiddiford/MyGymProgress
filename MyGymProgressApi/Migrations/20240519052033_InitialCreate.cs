@@ -62,7 +62,7 @@ namespace MyGymProgressApi.Migrations
             migrationBuilder.InsertData(
                 table: "TrainingSessions",
                 columns: new[] { "Id", "Date", "Notes", "WorkoutDuration", "WorkoutName", "WorkoutNotes" },
-                values: new object[] { 1, new DateTime(2024, 5, 17, 8, 37, 23, 155, DateTimeKind.Utc).AddTicks(5820), "Full body workout focusing on form", "1 hour", "Full Body Routine", "Felt good today, no pain." });
+                values: new object[] { 1, new DateTime(2024, 5, 19, 5, 20, 33, 263, DateTimeKind.Utc).AddTicks(5720), "Full body workout focusing on form", "1 hour", "Full Body Routine", "Felt good today, no pain." });
 
             migrationBuilder.InsertData(
                 table: "Exercises",
