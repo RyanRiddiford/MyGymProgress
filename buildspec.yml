@@ -1,0 +1,26 @@
+version: 0.2
+
+phases:
+  install:
+    runtime-versions:
+      dotnet: 3.1
+  pre_build:
+    commands:
+      - echo Changing to the .NET project directory
+      - cd MyGymProgressApi
+      - echo Restore .NET dependencies
+      - dotnet restore
+  build:
+    commands:
+      - echo Build the .NET project
+      - dotnet build --no-restore -c Release
+      - echo Run .NET tests
+      - dotnet test --no-build --verbosity normal
+  post_build:
+    commands:
+      - echo Publish the .NET application
+      - dotnet publish -c Release -o ../publish
+artifacts:
+  files:
+    - '**/*'
+  base-directory: 'MyGymProgressApi/publish'

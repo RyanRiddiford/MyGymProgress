@@ -40,7 +40,7 @@ class MainActivity : Activity() {
             .build()
 
         val request = Request.Builder()
-            .url("YOUR_API_ENDPOINT_HERE") // Replace with your API endpoint
+            .url("http://localhost:5123/api/sendTrainingSessions")
             .post(requestBody)
             .build()
 
