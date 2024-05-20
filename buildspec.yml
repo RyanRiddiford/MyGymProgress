@@ -2,13 +2,8 @@ version: 0.2
 
 phases:
   install:
-    commands:
-      - echo Installing .NET 8
-      - wget https://download.visualstudio.microsoft.com/download/pr/12345678-1234-1234-1234-1234567890ab/dotnet-sdk-8.0.100-preview-x64.tar.gz
-      - mkdir -p /usr/share/dotnet
-      - tar -zxvf dotnet-sdk-8.0.100-preview-x64.tar.gz -C /usr/share/dotnet
-      - export PATH=$PATH:/usr/share/dotnet
-      - export DOTNET_ROOT=/usr/share/dotnet
+    runtime-versions:
+      dotnet: 8
   pre_build:
     commands:
       - echo Changing to the .NET project directory
