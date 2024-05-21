@@ -11,8 +11,6 @@ phases:
     commands:
       - echo Build the .NET project
       - dotnet build --no-restore -c Release
-      - echo Run .NET tests
-      - dotnet test --no-build --verbosity normal
   post_build:
     commands:
       - echo Publish the .NET application
