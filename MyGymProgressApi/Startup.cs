@@ -31,10 +31,11 @@ namespace MyGymProgress
             //Add other service configurations
             //Configuration for DbContext
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("DefaultConnection")));
+                options.UseNpgsql(Configuration.GetConnectionString("AppDb")));
 
             //Register the IHttpClientFactory
             services.AddHttpClient();
+
 
         }
 

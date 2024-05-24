@@ -1,23 +1,13 @@
 version: 0.2
+
 phases:
-  install:
-    runtime-versions:
-      dotnet: 8.0
   pre_build:
     commands:
-      - echo Changing to the .NET project directory
-      - cd MyGymProgressApi
-      - echo Restore .NET dependencies
-      - dotnet restore
+      - $(aws ecr get-login --no-include-email --region us-west-2)
   build:
     commands:
-      - echo Build the .NET project
-      - dotnet build --no-restore -c Release
+      - docker build -t myimage .
+      - docker tag myimage:latest 012345678910.dkr.ecr.us-west-2.amazonaws.com/myrepo:latest
   post_build:
     commands:
-      - echo Publish the .NET application
-      - dotnet publish -c Release -o ../publish
-artifacts:
-  files:
-    - '**/*'
-  base-directory: 'publish'
+      - docker push 012345678910.dkr.ecr.us-west-2.amazonaws.com/myrepo:latest
