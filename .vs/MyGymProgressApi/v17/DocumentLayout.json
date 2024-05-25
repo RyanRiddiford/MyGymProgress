@@ -3,6 +3,10 @@
   "WorkspaceRootPath": "H:\\Personal Repo\\MyGymProgress\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\buildspec.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
+      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\buildspec.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}",
       "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\dockerfile||{8B382828-6202-11D1-8870-0000F87579D2}"
     },
@@ -78,7 +82,7 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 8,
               "Title": "IGNORE.txt",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\IGNORE.txt",
               "RelativeDocumentMoniker": "MyGymProgressApi\\IGNORE.txt",
@@ -92,6 +96,19 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "buildspec.yml",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\buildspec.yml",
+              "RelativeDocumentMoniker": "MyGymProgressApi\\buildspec.yml",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\buildspec.yml",
+              "RelativeToolTip": "MyGymProgressApi\\buildspec.yml",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAoAAABxAAAA",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
+              "WhenOpened": "2024-05-25T08:36:46.649Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "Dockerfile",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Dockerfile",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Dockerfile",
@@ -104,7 +121,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 5,
               "Title": "appsettings.Development.json",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.Development.json",
               "RelativeDocumentMoniker": "MyGymProgressApi\\appsettings.Development.json",
@@ -116,7 +133,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 14,
               "Title": "TrainingSessionCsv.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Handlers\\CsvHandler\\Records\\TrainingSessionCsv.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Handlers\\CsvHandler\\Records\\TrainingSessionCsv.cs",
@@ -128,7 +145,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 15,
               "Title": "ExerciseCsv.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Handlers\\CsvHandler\\Records\\ExerciseCsv.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Handlers\\CsvHandler\\Records\\ExerciseCsv.cs",
@@ -140,7 +157,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 16,
               "Title": "Exercise.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\Exercise.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\Models\\Exercise.cs",
@@ -152,7 +169,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 11,
               "Title": "TrainingRoute.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Routes\\TrainingRoute.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Routes\\TrainingRoute.cs",
@@ -164,7 +181,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 13,
               "Title": "TrainingController.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Controllers\\TrainingController.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Controllers\\TrainingController.cs",
@@ -176,7 +193,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 7,
               "Title": "launchSettings.json",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Properties\\launchSettings.json",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Properties\\launchSettings.json",
@@ -188,7 +205,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 3,
               "Title": "appsettings.json",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.json",
               "RelativeDocumentMoniker": "MyGymProgressApi\\appsettings.json",
@@ -200,7 +217,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 4,
               "Title": "Startup.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Startup.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Startup.cs",
@@ -212,7 +229,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 2,
               "Title": "Program.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Program.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Program.cs",
@@ -224,7 +241,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
+              "DocumentIndex": 6,
               "Title": "appsettings.Production.json",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.Production.json",
               "RelativeDocumentMoniker": "MyGymProgressApi\\appsettings.Production.json",
@@ -236,7 +253,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 9,
               "Title": "TrainingSession.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\TrainingSession.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\Models\\TrainingSession.cs",
@@ -248,7 +265,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 12,
               "Title": "Performance.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\Performance.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\Models\\Performance.cs",
@@ -260,7 +277,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 10,
               "Title": "MyGymProgressApi",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\MyGymProgressApi.csproj",
               "RelativeDocumentMoniker": "MyGymProgressApi\\MyGymProgressApi.csproj",
