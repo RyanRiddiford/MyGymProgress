@@ -97,7 +97,7 @@
               "RelativeDocumentMoniker": "MyGymProgressApi\\Dockerfile",
               "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Dockerfile",
               "RelativeToolTip": "MyGymProgressApi\\Dockerfile",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA0AAAAiAAAA",
+              "ViewState": "AQIAAAAAAAAAAAAAAAAAABEAAAAAAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001001|",
               "WhenOpened": "2024-05-21T07:57:03.426Z",
               "EditorCaption": ""
@@ -220,8 +220,7 @@
               "RelativeToolTip": "MyGymProgressApi\\Startup.cs",
               "ViewState": "AQIAABQAAAAAAAAAAAAQwAcAAAAkAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T07:07:23.602Z",
-              "EditorCaption": ""
+              "WhenOpened": "2024-05-17T07:07:23.602Z"
             },
             {
               "$type": "Document",
