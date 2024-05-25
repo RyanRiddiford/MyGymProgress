@@ -1,3 +1,20 @@
+# version: 0.2
+
+# phases:
+#   pre_build:
+#     commands:
+#       - echo Logging in to Amazon ECR...
+#       - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi
+#   build:
+#     commands:
+#       - echo Building the Docker image...
+#       - cd MyGymProgressApi
+#       - docker build -t 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest -f Dockerfile .
+#   post_build:
+#     commands:
+#       - echo Pushing the Docker image to ECR...
+#       - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
+#       - echo Build and push completed successfully!
 version: 0.2
 
 phases:
@@ -15,3 +32,6 @@ phases:
       - echo Pushing the Docker image to ECR...
       - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
       - echo Build and push completed successfully!
+artifacts:
+  files:
+    - MyGymProgressApi/bin/Release/net8.0/publish/**/*
