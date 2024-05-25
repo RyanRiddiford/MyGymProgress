@@ -26,7 +26,7 @@ phases:
     commands:
       - echo Building the Docker image...
       - cd MyGymProgressApi
-      - docker build -t 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
+      - docker build -t 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest .
   post_build:
     commands:
       - echo Pushing the Docker image to ECR...
