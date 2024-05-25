@@ -35,3 +35,4 @@ phases:
 artifacts:
   files:
     - MyGymProgressApi/bin/Release/net8.0/publish/**/*
+

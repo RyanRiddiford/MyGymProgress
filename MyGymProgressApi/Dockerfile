@@ -23,10 +23,9 @@
 # Define the build stage
 FROM mcr.microsoft.com/dotnet/sdk:8.0 AS build
 WORKDIR /src
-COPY ["MyGymProgressApi/MyGymProgressApi.csproj", "MyGymProgressApi/"]
-RUN dotnet restore "MyGymProgressApi/MyGymProgressApi.csproj"
+COPY ["MyGymProgressApi.csproj", "./"]
+RUN dotnet restore "MyGymProgressApi.csproj"
 COPY . .
-WORKDIR "/src/MyGymProgressApi"
 RUN dotnet build "MyGymProgressApi.csproj" -c Release -o /app/build
 
 # Define the publish stage
