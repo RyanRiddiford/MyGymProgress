@@ -3,11 +3,15 @@ version: 0.2
 phases:
   pre_build:
     commands:
-      - $(aws ecr get-login --no-include-email --region us-west-2)
+      - echo Logging in to Amazon ECR...
+      - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi
   build:
     commands:
-      - docker build -t myimage .
-      - docker tag myimage:latest 012345678910.dkr.ecr.us-west-2.amazonaws.com/myrepo:latest
+      - echo Build started on `date`
+      - echo Building the Docker image...
+      - docker build -t mygymprogressapi .
+      - docker tag mygymprogressapi:latest 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
   post_build:
     commands:
-      - docker push 012345678910.dkr.ecr.us-west-2.amazonaws.com/myrepo:latest
+      - echo Pushing the Docker image...
+      - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
