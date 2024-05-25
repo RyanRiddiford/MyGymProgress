@@ -7,11 +7,13 @@ phases:
       - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi
   build:
     commands:
-      - echo Build started on `date`
-      - echo Building the Docker image...
-      - docker build -t mygymprogressapi .
-      - docker tag mygymprogressapi:latest 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
+      - echo Pulling existing Docker image...
+      - docker pull 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
   post_build:
     commands:
-      - echo Pushing the Docker image...
-      - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
+      - echo Docker image pulled successfully!
+      - echo Ready to deploy or run further tests...
+
+artifacts:
+  files:
+    - imagedefinitions.json
