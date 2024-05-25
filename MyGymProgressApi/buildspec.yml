@@ -12,8 +12,8 @@ phases:
       - docker build -t 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest -f Dockerfile .
   post_build:
     commands:
-      - echo Pushing the Docker image to ECR...
-      - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
-      - echo Build and push completed successfully!
-      - echo "Listing contents of /app/publish"
-      - ls -al /app/publish
+  commands:
+    - echo Pushing the Docker image to ECR...
+    - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
+    - echo Build and push completed successfully!
+    - docker run --rm 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest ls /app/publish
