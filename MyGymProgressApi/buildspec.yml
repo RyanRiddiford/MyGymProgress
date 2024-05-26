@@ -15,40 +15,13 @@
 #       - echo Pushing the Docker image to ECR...
 #       - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
 #       - echo Build and push completed successfully!
-# version: 0.2
-
-# phases:
-#   pre_build:
-#     commands:
-#       - echo Logging in to Amazon ECR...
-#       - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi
-#   build:
-#     commands:
-#       - echo Building the Docker image...
-#       - cd MyGymProgressApi
-#       - docker build -t 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest .
-#   post_build:
-#     commands:
-#       - echo Pushing the Docker image to ECR...
-#       - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
-#       - echo Build and push completed successfully!
-# artifacts:
-#   files:
-#     - '**/*'
-
 version: 0.2
 
 phases:
-  install:
-    runtime-versions:
-      docker: 20
-    commands:
-      - echo Installing .NET 8...
-      - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel 8.0
   pre_build:
     commands:
       - echo Logging in to Amazon ECR...
-      - $(aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com)
+      - aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi
   build:
     commands:
       - echo Building the Docker image...
@@ -62,3 +35,30 @@ phases:
 artifacts:
   files:
     - '**/*'
+
+# version: 0.2
+
+# phases:
+#   install:
+#     runtime-versions:
+#       docker: 20
+#     commands:
+#       - echo Installing .NET 8...
+#       - curl -sSL https://dot.net/v1/dotnet-install.sh | bash /dev/stdin --channel 8.0
+#   pre_build:
+#     commands:
+#       - echo Logging in to Amazon ECR...
+#       - $(aws ecr get-login-password --region ap-southeast-2 | docker login --username AWS --password-stdin 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com)
+#   build:
+#     commands:
+#       - echo Building the Docker image...
+#       - cd MyGymProgressApi
+#       - docker build -t 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest .
+#   post_build:
+#     commands:
+#       - echo Pushing the Docker image to ECR...
+#       - docker push 464612618574.dkr.ecr.ap-southeast-2.amazonaws.com/mygymprogressapi:latest
+#       - echo Build and push completed successfully!
+# artifacts:
+#   files:
+#     - '**/*'
