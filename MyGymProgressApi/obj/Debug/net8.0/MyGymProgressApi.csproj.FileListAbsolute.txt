@@ -1,6 +1,14 @@
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\web.config
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\appsettings.Development.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\appsettings.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\appsettings.Production.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\Dockerrun.aws.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\appsettings.Development.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\appsettings.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\appsettings.Production.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\Dockerrun.aws.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\MyGymProgressApi.deps.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\MyGymProgressApi.runtimeconfig.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\MyGymProgressApi.exe
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\MyGymProgressApi.deps.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\MyGymProgressApi.runtimeconfig.json
