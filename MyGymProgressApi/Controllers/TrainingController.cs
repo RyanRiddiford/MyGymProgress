@@ -27,15 +27,19 @@ namespace MyGymProgressApi.Controllers
         //private readonly IAmazonRDS _amazonRDS;
         private readonly HttpClient _httpClient;
         private readonly AppDbContext _appDbContext;
+        private static Dictionary<string, List<byte[]>> fileChunks = new Dictionary<string, List<byte[]>>();
+        private readonly IWebHostEnvironment _environment;
 
         public TrainingController(ILogger<TrainingController> logger,
             //IAmazonS3 amazonS3,
             IHttpClientFactory httpClientFactory,
             //IAmazonRDS amazonRDS,
-            AppDbContext appDbContext)
+            AppDbContext appDbContext,
+            IWebHostEnvironment environment)
         {
             _appDbContext = appDbContext;
             _httpClient = httpClientFactory.CreateClient();
+            _environment = environment;
         }
 
         // GET: api/retrieveTrainingSessions
@@ -58,15 +62,110 @@ namespace MyGymProgressApi.Controllers
             return training;
         }
 
-        // POST: api/sendTrainingSessions
-        public async Task<IActionResult> PostAll(IFormFile file)
-        {
+//        // POST: api/sendTrainingSessions
+//        public async Task<IActionResult> PostAll(IFormFile file)
+//        {
 
-            if (file == null || file.Length == 0)
+//            if (file == null || file.Length == 0)
+//            {
+//                return BadRequest("No file uploaded...");
+//            }
+
+//            var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
+//            {
+//                MissingFieldFound = null,
+//                HeaderValidated = null,
+//                Delimiter = ";",
+//                IgnoreBlankLines = true,
+//                PrepareHeaderForMatch = args => args.Header.Replace(" ", "")
+//            };
+
+//            try
+//            {
+//                using (var reader = new StreamReader(file.OpenReadStream()))
+//                using (var csv = new CsvReader(reader, csvConfig))
+//                {
+//                    var exerciseRecords = csv.GetRecords<ExerciseCsv>().ToList();
+//                    var groupedSessions = exerciseRecords
+//                        .GroupBy(e => new { e.Date, e.WorkoutName })
+//                        .Select(g => new TrainingSession
+//                        {
+//                            Date = ParseDateAsUtc(g.Key.Date),
+//                            WorkoutName = g.Key.WorkoutName,
+//                            Notes = g.First().Notes, //Assumes first record's notes are session notes
+//                            WorkoutNotes = g.First().WorkoutNotes,
+//                            WorkoutDuration = g.First().WorkoutDuration,
+//                            Exercises = g.Select(e => new Exercise
+//                            {
+//                                ExerciseName = e.ExerciseName,
+//                                SetOrder = e.SetOrder,
+//                                Weight = e.Weight,
+//                                WeightUnit = e.WeightUnit,
+//                                Reps = e.Reps,
+//                                RPE = e.RPE,
+//                                Distance = e.Distance,
+//                                DistanceUnit = e.DistanceUnit,
+//                                Seconds = e.Seconds
+//                            }).ToList()
+//                        }).ToList();
+//try
+//                    {
+//                    await _appDbContext.AddRangeAsync(groupedSessions);
+//                    await _appDbContext.SaveChangesAsync();
+//                    }
+//                    catch(Exception e)
+//                    {
+//                        Console.WriteLine(e);
+//                    }
+                    
+//                }
+
+//                return Ok("Training sessions uploaded successfully.");
+//            }
+//            catch (Exception ex)
+//            {
+//                return StatusCode(500, $"Error processing the file: {ex.Message}");
+//            }
+//        }
+
+        public async Task<IActionResult> PostAll([FromForm] IFormFile chunk, [FromForm] string fileId, [FromForm] int chunkNumber, [FromForm] int totalChunks)
+        {
+            if (chunk == null || chunk.Length == 0)
             {
-                return BadRequest("No file uploaded...");
+                return BadRequest("No chunk uploaded...");
             }
 
+            if (!fileChunks.ContainsKey(fileId))
+            {
+                fileChunks[fileId] = new List<byte[]>();
+            }
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await chunk.CopyToAsync(memoryStream);
+                fileChunks[fileId].Add(memoryStream.ToArray());
+            }
+
+            if (fileChunks[fileId].Count == totalChunks)
+            {
+                var completeFilePath = Path.Combine(_environment.ContentRootPath, "uploads", $"{fileId}.csv");
+                using (var fileStream = new FileStream(completeFilePath, FileMode.Create))
+                {
+                    foreach (var fileChunk in fileChunks[fileId])
+                    {
+                        await fileStream.WriteAsync(fileChunk, 0, fileChunk.Length);
+                    }
+                }
+
+                fileChunks.Remove(fileId);
+                return await ProcessCompleteFile(completeFilePath);
+            }
+
+            return Ok("Chunk uploaded successfully.");
+        }
+
+        private async Task<IActionResult> ProcessCompleteFile(string filePath)
+        {
             var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
             {
                 MissingFieldFound = null,
@@ -78,7 +177,7 @@ namespace MyGymProgressApi.Controllers
 
             try
             {
-                using (var reader = new StreamReader(file.OpenReadStream()))
+                using (var reader = new StreamReader(filePath))
                 using (var csv = new CsvReader(reader, csvConfig))
                 {
                     var exerciseRecords = csv.GetRecords<ExerciseCsv>().ToList();
@@ -88,7 +187,7 @@ namespace MyGymProgressApi.Controllers
                         {
                             Date = ParseDateAsUtc(g.Key.Date),
                             WorkoutName = g.Key.WorkoutName,
-                            Notes = g.First().Notes, //Assumes first record's notes are session notes
+                            Notes = g.First().Notes,
                             WorkoutNotes = g.First().WorkoutNotes,
                             WorkoutDuration = g.First().WorkoutDuration,
                             Exercises = g.Select(e => new Exercise
@@ -104,16 +203,9 @@ namespace MyGymProgressApi.Controllers
                                 Seconds = e.Seconds
                             }).ToList()
                         }).ToList();
-try
-                    {
+
                     await _appDbContext.AddRangeAsync(groupedSessions);
                     await _appDbContext.SaveChangesAsync();
-                    }
-                    catch(Exception e)
-                    {
-                        Console.WriteLine(e);
-                    }
-                    
                 }
 
                 return Ok("Training sessions uploaded successfully.");
@@ -123,7 +215,6 @@ try
                 return StatusCode(500, $"Error processing the file: {ex.Message}");
             }
         }
-
 
         private List<TrainingSession> GroupAndCreateSessions(IEnumerable<ExerciseCsv> records)
         {

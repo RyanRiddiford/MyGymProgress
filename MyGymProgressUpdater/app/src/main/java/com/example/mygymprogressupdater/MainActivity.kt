@@ -20,6 +20,7 @@ class MainActivity : Activity() {
     private lateinit var responseMessageTextView: TextView
 
     private val client = OkHttpClient()
+    private val endpoint = "/api/sendTrainingSessions"
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -107,7 +108,7 @@ class MainActivity : Activity() {
             .build()
 
         val request = Request.Builder()
-            .url(url)
+            .url(url + endpoint)
             .post(multipartBody)
             .build()
 
