@@ -56,7 +56,7 @@ namespace MyGymProgress.Data
                     Reps = 5,
                     RPE = 8,
                     Distance = 0m,
-                    DistanceUnit = "m",  // Ensure this has a value
+                    DistanceUnit = "m",
                     Seconds = 0
                 },
                 new Exercise
@@ -70,7 +70,7 @@ namespace MyGymProgress.Data
                     Reps = 5,
                     RPE = 8,
                     Distance = 0m,
-                    DistanceUnit = "m",  // Ensure this has a value
+                    DistanceUnit = "m",
                     Seconds = 0
                 }
             );

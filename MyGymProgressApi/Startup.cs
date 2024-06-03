@@ -1,12 +1,6 @@
-﻿using Microsoft.AspNetCore.Builder;
-using Microsoft.AspNetCore.Hosting;
-using Microsoft.Extensions.Configuration;
-using Microsoft.Extensions.DependencyInjection;
-using Microsoft.Extensions.Hosting;
+﻿using Microsoft.EntityFrameworkCore;
 using MyGymProgress.Data;
 using MyGymProgress.Routes;
-using Microsoft.EntityFrameworkCore;
-using Newtonsoft.Json;
 
 namespace MyGymProgress
 {
@@ -31,7 +25,7 @@ namespace MyGymProgress
             //Add other service configurations
             //Configuration for DbContext
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("AppDb")));
+                options.UseNpgsql(Configuration.GetConnectionString("LocalDb")));
 
             //Register the IHttpClientFactory
             services.AddHttpClient();

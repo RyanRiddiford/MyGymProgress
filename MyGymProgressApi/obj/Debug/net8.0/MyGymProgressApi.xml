@@ -4,6 +4,24 @@
         <name>MyGymProgressApi</name>
     </assembly>
     <members>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetAll">
+            GET: Get all Training Sessions
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetPage(System.Int32)">
+            GET: Training Session page
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetNumPages">
+            <summary>
+            Get number of Training Sessions
+            </summary>
+            <returns></returns>
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetByID(System.Int32)">
+            GET: A Training Session by ID
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.PostAll(Microsoft.AspNetCore.Http.IFormFile,System.String,System.Int32,System.Int32)">
+            POST: 
+        </member>
         <member name="T:MyGymProgressApi.Handlers.CsvHandler.Records.TrainingSessionCsv">
             <summary>
             Represents a training session as imported from a CSV file, including all related exercises.

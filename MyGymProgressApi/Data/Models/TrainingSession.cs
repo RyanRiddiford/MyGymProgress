@@ -1,6 +1,4 @@
 ﻿using backend.Data.Models;
-using System;
-using System.ComponentModel.DataAnnotations;
 
 namespace MyGymProgress.Data.Models
 {
