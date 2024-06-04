@@ -25,7 +25,7 @@ namespace MyGymProgress
             //Add other service configurations
             //Configuration for DbContext
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("LocalDb")));
+                options.UseNpgsql(Configuration.GetConnectionString("LiveDb")));
 
             //Register the IHttpClientFactory
             services.AddHttpClient();
