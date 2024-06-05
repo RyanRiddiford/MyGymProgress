@@ -6,12 +6,12 @@ const TrainingSessions = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 10; // Adjust based on your needs
 
-  const BASE_API_URL = process.env.BASE_API_URL || "http://localhost:5123";
+  const BASE_API_URL = process.env.BASE_API_URL || "https://localhost:7103";
 
   useEffect(() => {
     const fetchSessions = async () => {
       try {
-        const res = await axios.get(`${BASE_API_URL}}/api/trainingSession/page/${currentPage}`);
+        const res = await axios.get(`${BASE_API_URL}/api/trainingSession/page/${currentPage}`);
         setSessions(res.data);
       } catch (err) {
         console.error("Error fetching data: ", err);

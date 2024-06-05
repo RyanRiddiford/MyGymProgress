@@ -2,10 +2,9 @@
  * Contains actions for Training Sessions
  */
 
-
-using backend.Data.Models;
 using CsvHelper;
 using CsvHelper.Configuration;
+using backend.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyGymProgress.Data;
@@ -14,6 +13,11 @@ using System.Globalization;
 
 namespace MyGymProgressApi.Controllers
 {
+    /// <summary>
+    /// Handles actions for training sessions.
+    /// </summary>
+    [ApiController]
+    [Route("api/[controller]")]
     public class TrainingController : ControllerBase
     {
         private readonly ILogger<TrainingController> _logger;
@@ -21,7 +25,6 @@ namespace MyGymProgressApi.Controllers
         private readonly AppDbContext _appDbContext;
         private static readonly Dictionary<string, List<byte[]>> fileChunks = new Dictionary<string, List<byte[]>>();
         private readonly IWebHostEnvironment _environment;
-
         private readonly byte PAGE_SIZE = 10;
 
         public TrainingController(ILogger<TrainingController> logger,
@@ -34,19 +37,25 @@ namespace MyGymProgressApi.Controllers
             _environment = environment;
         }
 
-        /**
-         * GET: Get all Training Sessions
-         */
+        /// <summary>
+        /// Retrieves all training sessions with associated exercises.
+        /// </summary>
+        /// <returns>A list of training sessions.</returns>
+        [HttpGet("all")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<TrainingSession>>> GetAll()
         {
             Console.WriteLine("Getting All Training Sessions");
             return await _appDbContext.TrainingSessions.Include(ts => ts.Exercises).ToListAsync();
         }
 
-
-        /**
-         * GET: Training Session page
-         */
+        /// <summary>
+        /// Retrieves a paginated list of training sessions.
+        /// </summary>
+        /// <param name="page">The page number to retrieve.</param>
+        /// <returns>A list of training sessions for the specified page.</returns>
+        [HttpGet("page/{page}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<ActionResult<IEnumerable<TrainingSession>>> GetPage(int page)
         {
             Console.WriteLine("Getting page of Training Sessions");
@@ -59,18 +68,26 @@ namespace MyGymProgressApi.Controllers
         }
 
         /// <summary>
-        /// Get number of Training Sessions
+        /// Retrieves the number of pages of training sessions.
         /// </summary>
-        /// <returns></returns>
+        /// <returns>The total number of pages.</returns>
+        [HttpGet("numPages")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
         public async Task<IActionResult> GetNumPages()
         {
             Console.WriteLine($"{nameof(GetNumPages)}");
             int count = await _appDbContext.TrainingSessions.CountAsync();
             return Ok(count);
         }
-        /**
-         * GET: A Training Session by ID
-         */
+
+        /// <summary>
+        /// Retrieves a specific training session by ID.
+        /// </summary>
+        /// <param name="id">The ID of the training session to retrieve.</param>
+        /// <returns>The training session if found; otherwise, NotFound.</returns>
+        [HttpGet("{id}")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
         public async Task<ActionResult<TrainingSession>> GetByID(int id)
         {
             var training = await _appDbContext.TrainingSessions.Include(ts => ts.Exercises).FirstOrDefaultAsync(ts => ts.Id == id);
@@ -81,9 +98,17 @@ namespace MyGymProgressApi.Controllers
             return training;
         }
 
-        /**
-         * POST: 
-         */
+        /// <summary>
+        /// Uploads training sessions in chunks.
+        /// </summary>
+        /// <param name="chunk">The file chunk to upload.</param>
+        /// <param name="fileId">The file identifier for the chunks.</param>
+        /// <param name="chunkNumber">The current chunk number.</param>
+        /// <param name="totalChunks">The total number of chunks.</param>
+        /// <returns>Status of the upload process.</returns>
+        [HttpPost("upload")]
+        [ProducesResponseType(StatusCodes.Status200OK)]
+        [ProducesResponseType(StatusCodes.Status400BadRequest)]
         public async Task<IActionResult> PostAll([FromForm] IFormFile chunk, [FromForm] string fileId, [FromForm] int chunkNumber, [FromForm] int totalChunks)
         {
             if (chunk == null || chunk.Length == 0)
@@ -119,7 +144,6 @@ namespace MyGymProgressApi.Controllers
 
             return Ok("Chunk uploaded successfully.");
         }
-
         private async Task<IActionResult> ProcessCompleteFile(string filePath)
         {
             var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
@@ -195,5 +219,10 @@ namespace MyGymProgressApi.Controllers
 
 
 
+
     }
 }
+
+
+
+

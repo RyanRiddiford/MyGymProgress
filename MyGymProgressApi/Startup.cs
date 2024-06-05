@@ -1,6 +1,8 @@
 ﻿using Microsoft.EntityFrameworkCore;
+using Microsoft.OpenApi.Models;
 using MyGymProgress.Data;
 using MyGymProgress.Routes;
+using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace MyGymProgress
 {
@@ -22,14 +24,37 @@ namespace MyGymProgress
                 {
                     options.SerializerSettings.ReferenceLoopHandling = Newtonsoft.Json.ReferenceLoopHandling.Ignore;
                 });
+
+            //Configure DbContext with conditional connection string
+            string connectionString = Configuration["ConnectionStrings:DefaultConnection"] ?? "";
+            if (string.IsNullOrEmpty(connectionString))
+            {
+                connectionString = Environment.GetEnvironmentVariable("DB_CONNECTION_STRING")!;
+            }
             //Add other service configurations
             //Configuration for DbContext
             services.AddDbContext<AppDbContext>(options =>
-                options.UseNpgsql(Configuration.GetConnectionString("LiveDb")));
+                options.UseNpgsql(connectionString));
+
+            services.AddCors(options =>
+            {
+                options.AddPolicy("AllowAnyOrigin", builder =>
+                    builder.AllowAnyOrigin()   //Allows requests from any source
+                           .AllowAnyMethod()   //Allows all HTTP methods
+                           .AllowAnyHeader()); //Allows all headers
+            });
 
             //Register the IHttpClientFactory
             services.AddHttpClient();
 
+            //Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.)
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Gym Progress API", Version = "v1" });
+
+                // Configure Swagger to understand IFormFile
+                c.SchemaFilter<SwaggerFileSchemaFilter>();
+            });
 
         }
 
@@ -43,11 +68,34 @@ namespace MyGymProgress
 
             app.UseRouting();
 
+            //Enable middleware to serve generated Swagger as a JSON endpoint
+            app.UseSwagger();
+
+
+
+
+
+        app.UseCors("AllowAnyOrigin");
+
             app.UseEndpoints(endpoints =>
             {
                 //endpoints.MapControllers();
                 endpoints.MapTrainingRoutes();
             });
         }
+public class SwaggerFileSchemaFilter : ISchemaFilter
+        {
+            public void Apply(OpenApiSchema schema, SchemaFilterContext context)
+            {
+                if (context.Type == typeof(IFormFile))
+                {
+                    schema.Type = "string";
+                    schema.Format = "binary";
+                }
+            }
+        }
+
     }
+
+
 }
