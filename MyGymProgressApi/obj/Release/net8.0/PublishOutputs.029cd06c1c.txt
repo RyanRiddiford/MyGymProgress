@@ -1,4 +1,5 @@
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.exe
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\web.config
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\web.config
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\web.config
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\web.config
@@ -24,6 +25,12 @@ H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\Dockerrun.aws.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\MyGymProgressApi.deps.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\MyGymProgressApi.runtimeconfig.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\appsettings.Development.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\appsettings.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\appsettings.Production.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\Dockerrun.aws.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\MyGymProgressApi.deps.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\publish\publish\publish\publish\MyGymProgressApi.runtimeconfig.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.dll
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.runtimeconfig.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.pdb

@@ -134,3 +134,10 @@ H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publi
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\Dockerrun.aws.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\MyGymProgressApi.deps.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\MyGymProgressApi.runtimeconfig.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\web.config
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\appsettings.Development.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\appsettings.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\appsettings.Production.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\Dockerrun.aws.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\MyGymProgressApi.deps.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\publish\publish\publish\publish\MyGymProgressApi.runtimeconfig.json

@@ -6,7 +6,7 @@ const TrainingSessions = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 10; // Adjust based on your needs
 
-  const BASE_API_URL = process.env.BASE_API_URL || "https://localhost:7103";
+  const BASE_API_URL = process.env.BASE_API_URL;
 
   useEffect(() => {
     const fetchSessions = async () => {

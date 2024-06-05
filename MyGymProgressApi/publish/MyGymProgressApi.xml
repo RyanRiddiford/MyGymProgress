@@ -4,23 +4,46 @@
         <name>MyGymProgressApi</name>
     </assembly>
     <members>
+        <member name="T:MyGymProgressApi.Controllers.TrainingController">
+            <summary>
+            Handles actions for training sessions.
+            </summary>
+        </member>
         <member name="M:MyGymProgressApi.Controllers.TrainingController.GetAll">
-            GET: Get all Training Sessions
+            <summary>
+            Retrieves all training sessions with associated exercises.
+            </summary>
+            <returns>A list of training sessions.</returns>
         </member>
         <member name="M:MyGymProgressApi.Controllers.TrainingController.GetPage(System.Int32)">
-            GET: Training Session page
+            <summary>
+            Retrieves a paginated list of training sessions.
+            </summary>
+            <param name="page">The page number to retrieve.</param>
+            <returns>A list of training sessions for the specified page.</returns>
         </member>
         <member name="M:MyGymProgressApi.Controllers.TrainingController.GetNumPages">
             <summary>
-            Get number of Training Sessions
+            Retrieves the number of pages of training sessions.
             </summary>
-            <returns></returns>
+            <returns>The total number of pages.</returns>
         </member>
         <member name="M:MyGymProgressApi.Controllers.TrainingController.GetByID(System.Int32)">
-            GET: A Training Session by ID
+            <summary>
+            Retrieves a specific training session by ID.
+            </summary>
+            <param name="id">The ID of the training session to retrieve.</param>
+            <returns>The training session if found; otherwise, NotFound.</returns>
         </member>
         <member name="M:MyGymProgressApi.Controllers.TrainingController.PostAll(Microsoft.AspNetCore.Http.IFormFile,System.String,System.Int32,System.Int32)">
-            POST: 
+            <summary>
+            Uploads training sessions in chunks.
+            </summary>
+            <param name="chunk">The file chunk to upload.</param>
+            <param name="fileId">The file identifier for the chunks.</param>
+            <param name="chunkNumber">The current chunk number.</param>
+            <param name="totalChunks">The total number of chunks.</param>
+            <returns>Status of the upload process.</returns>
         </member>
         <member name="T:MyGymProgressApi.Handlers.CsvHandler.Records.TrainingSessionCsv">
             <summary>
