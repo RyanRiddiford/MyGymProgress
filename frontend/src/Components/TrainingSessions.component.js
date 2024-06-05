@@ -6,7 +6,7 @@ const TrainingSessions = () => {
   const [currentPage, setCurrentPage] = useState(1);
   const pageSize = 10; // Adjust based on your needs
 
-  const BASE_API_URL = process.env.BASE_API_URL;
+  const BASE_API_URL = process.env.BASE_API_URL || "http://my-gym-progress-api.ap-southeast-2.elasticbeanstalk.com/";
 
   useEffect(() => {
     const fetchSessions = async () => {
