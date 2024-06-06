@@ -47,6 +47,8 @@ namespace MyGymProgress
             //Register the IHttpClientFactory
             services.AddHttpClient();
 
+            services.AddHealthChecks();
+
             //Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.)
             services.AddSwaggerGen(c =>
             {
@@ -81,6 +83,9 @@ namespace MyGymProgress
             {
                 //endpoints.MapControllers();
                 endpoints.MapTrainingRoutes();
+
+                //Map health checks to a specific endpoint
+                endpoints.MapHealthChecks("/");
             });
         }
 public class SwaggerFileSchemaFilter : ISchemaFilter
