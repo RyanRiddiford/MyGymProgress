@@ -1,0 +1,71 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>MyGymProgressApi</name>
+    </assembly>
+    <members>
+        <member name="T:MyGymProgressApi.Controllers.TrainingController">
+            <summary>
+            Handles actions for training sessions.
+            </summary>
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetAll">
+            <summary>
+            Retrieves all training sessions with associated exercises.
+            </summary>
+            <returns>A list of training sessions.</returns>
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetPage(System.Int32)">
+            <summary>
+            Retrieves a paginated list of training sessions.
+            </summary>
+            <param name="page">The page number to retrieve.</param>
+            <returns>A list of training sessions for the specified page.</returns>
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetNumPages">
+            <summary>
+            Retrieves the number of pages of training sessions.
+            </summary>
+            <returns>The total number of pages.</returns>
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.GetByID(System.Int32)">
+            <summary>
+            Retrieves a specific training session by ID.
+            </summary>
+            <param name="id">The ID of the training session to retrieve.</param>
+            <returns>The training session if found; otherwise, NotFound.</returns>
+        </member>
+        <member name="M:MyGymProgressApi.Controllers.TrainingController.PostAll(Microsoft.AspNetCore.Http.IFormFile,System.String,System.Int32,System.Int32)">
+            <summary>
+            Uploads training sessions in chunks.
+            </summary>
+            <param name="chunk">The file chunk to upload.</param>
+            <param name="fileId">The file identifier for the chunks.</param>
+            <param name="chunkNumber">The current chunk number.</param>
+            <param name="totalChunks">The total number of chunks.</param>
+            <returns>Status of the upload process.</returns>
+        </member>
+        <member name="T:MyGymProgressApi.Handlers.CsvHandler.Records.TrainingSessionCsv">
+            <summary>
+            Represents a training session as imported from a CSV file, including all related exercises.
+            </summary>
+        </member>
+        <member name="T:MyGymProgressApi.Migrations.InitialCreate">
+            <inheritdoc />
+        </member>
+        <member name="M:MyGymProgressApi.Migrations.InitialCreate.Up(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyGymProgressApi.Migrations.InitialCreate.Down(Microsoft.EntityFrameworkCore.Migrations.MigrationBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="M:MyGymProgressApi.Migrations.InitialCreate.BuildTargetModel(Microsoft.EntityFrameworkCore.ModelBuilder)">
+            <inheritdoc />
+        </member>
+        <member name="T:MyGymProgress.Data.AppDbContext">
+            <summary>
+            Database Migrations schematics builder
+            </summary>
+        </member>
+    </members>
+</doc>

@@ -72,18 +72,30 @@ namespace MyGymProgress
             //Enable middleware to serve generated Swagger as a JSON endpoint
             app.UseSwagger();
 
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Gym Progress API V1");
+                c.RoutePrefix = string.Empty;  //Set the Swagger UI at the root
+            });
+
+            //To additionally serve Swagger at "/docs", setup another Swagger UI middleware
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v1/swagger.json", "My Gym Progress API V1");
+                c.RoutePrefix = "docs";  //Set the Swagger UI at the "/docs" path
+            });
 
 
 
 
-        app.UseCors("AllowAnyOrigin");
+            app.UseCors("AllowAnyOrigin");
 
             app.UseEndpoints(endpoints =>
             { 
                 endpoints.MapControllers();
 
                 //Map health checks to a specific endpoint
-                endpoints.MapHealthChecks("/");
+                endpoints.MapHealthChecks("/health");
             });
         }
 public class SwaggerFileSchemaFilter : ISchemaFilter
