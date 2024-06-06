@@ -55,6 +55,9 @@ namespace MyGymProgress
 
                 //Configure Swagger to understand IFormFile
                 c.SchemaFilter<SwaggerFileSchemaFilter>();
+
+                // This part ensures that file parameters are described as file uploads
+                c.OperationFilter<FileUploadOperation>();
             });
 
         }
@@ -109,6 +112,56 @@ public class SwaggerFileSchemaFilter : ISchemaFilter
                 }
             }
         }
+
+        public class FileUploadOperation : IOperationFilter
+        {
+            public void Apply(OpenApiOperation operation, OperationFilterContext context)
+            {
+                if (operation.Parameters == null)
+                    return;
+
+                var formFileParameters = context.ApiDescription.ActionDescriptor.Parameters
+                    .Where(param => param.ParameterType == typeof(IFormFile))
+                    .Select(param => param.Name)
+                    .ToList();
+
+                var formFileParameterNames = operation.Parameters
+                    .Where(param => formFileParameters.Contains(param.Name))
+                    .Select(param => param.Name)
+                    .ToList();
+
+                foreach (var paramName in formFileParameterNames)
+                {
+                    var parameter = operation.Parameters.Single(p => p.Name == paramName);
+                    operation.Parameters.Remove(parameter);
+                    operation.RequestBody = new OpenApiRequestBody
+                    {
+                        Content =
+                {
+                    ["multipart/form-data"] = new OpenApiMediaType
+                    {
+                        Schema = new OpenApiSchema
+                        {
+                            Type = "object",
+                            Properties =
+                            {
+                                [paramName] = new OpenApiSchema
+                                {
+                                    Description = "Upload File",
+                                    Type = "file",
+                                    Format = "binary"
+                                }
+                            },
+                            Required = new HashSet<string> { paramName }
+                        }
+                    }
+                }
+                    };
+                }
+            }
+        }
+
+
 
     }
 

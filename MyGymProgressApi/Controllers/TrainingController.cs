@@ -109,7 +109,7 @@ namespace MyGymProgressApi.Controllers
         [HttpPost("upload")]
         [ProducesResponseType(StatusCodes.Status200OK)]
         [ProducesResponseType(StatusCodes.Status400BadRequest)]
-        public async Task<IActionResult> PostAll([FromForm] IFormFile chunk, [FromForm] string fileId, [FromForm] int chunkNumber, [FromForm] int totalChunks)
+        public async Task<IActionResult> PostAll(IFormFile chunk, [FromForm] string fileId, [FromForm] int chunkNumber, [FromForm] int totalChunks)
         {
             if (chunk == null || chunk.Length == 0)
             {
@@ -144,6 +144,8 @@ namespace MyGymProgressApi.Controllers
 
             return Ok("Chunk uploaded successfully.");
         }
+
+        [NonAction]
         private async Task<IActionResult> ProcessCompleteFile(string filePath)
         {
             var csvConfig = new CsvConfiguration(CultureInfo.InvariantCulture)
@@ -196,7 +198,7 @@ namespace MyGymProgressApi.Controllers
             }
         }
 
-
+        [NonAction]
         public DateTime ParseDateAsUtc(DateTime date)
         {
             try

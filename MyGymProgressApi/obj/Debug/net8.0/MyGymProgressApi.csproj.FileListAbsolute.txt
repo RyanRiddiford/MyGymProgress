@@ -113,3 +113,10 @@ H:\Personal Repo\MyGymProgress\MyGymProgressApi\obj\Debug\net8.0\MyGymProgressAp
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\obj\Debug\net8.0\MyGymProgressApi.pdb
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\obj\Debug\net8.0\MyGymProgressApi.genruntimeconfig.cache
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\obj\Debug\net8.0\ref\MyGymProgressApi.dll
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\web.config
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\appsettings.Development.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\appsettings.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\appsettings.Production.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\Dockerrun.aws.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\MyGymProgressApi.deps.json
+H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Debug\net8.0\publish\MyGymProgressApi.runtimeconfig.json
