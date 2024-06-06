@@ -3,72 +3,12 @@
   "WorkspaceRootPath": "H:\\Personal Repo\\MyGymProgress\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\ignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\ignore.txt||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\properties\\launchsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\appsettings.production.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\appsettings.development.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\startup.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\data\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\data\\models\\exercise.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\data\\models\\trainingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\data\\models\\trainingsession.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\strong6873959381190187561.csv||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\strong6873959381190187561.csv||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\controllers\\trainingcontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\data\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\routes\\trainingroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\routes\\trainingroute.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\buildspec.yml||{8B382828-6202-11D1-8870-0000F87579D2}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\buildspec.yml||{8B382828-6202-11D1-8870-0000F87579D2}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\handlers\\csvhandler\\records\\exercisecsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\handlers\\csvhandler\\records\\exercisecsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\handlers\\csvhandler\\records\\trainingsessioncsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\handlers\\csvhandler\\records\\trainingsessioncsv.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|h:\\personal repo\\mygymprogress\\mygymprogressapi\\data\\models\\performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{AD9C27A8-1F3A-44C5-BD54-871CA8BDF231}|MyGymProgressApi\\MyGymProgressApi.csproj|solutionrelative:mygymprogressapi\\data\\models\\performance.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -82,216 +22,35 @@
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
-              "Title": "IGNORE.txt",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\IGNORE.txt",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\IGNORE.txt",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\IGNORE.txt",
-              "RelativeToolTip": "MyGymProgressApi\\IGNORE.txt",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAUAAAAWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003109|",
-              "WhenOpened": "2024-06-06T08:21:21.608Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
               "DocumentIndex": 1,
-              "Title": "launchSettings.json",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Properties\\launchSettings.json",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Properties\\launchSettings.json",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Properties\\launchSettings.json",
-              "RelativeToolTip": "MyGymProgressApi\\Properties\\launchSettings.json",
-              "ViewState": "AQIAABwAAAAAAAAAAAAAwCQAAAAuAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-05T07:54:37.262Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 6,
-              "Title": "Exercise.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\Exercise.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\Models\\Exercise.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\Exercise.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Data\\Models\\Exercise.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAYAAAAUAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:23:35.822Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 7,
-              "Title": "TrainingSession.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\TrainingSession.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\Models\\TrainingSession.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\TrainingSession.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Data\\Models\\TrainingSession.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:23:48.28Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 8,
-              "Title": "strong6873959381190187561.csv",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\strong6873959381190187561.csv",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\strong6873959381190187561.csv",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\strong6873959381190187561.csv",
-              "RelativeToolTip": "MyGymProgressApi\\strong6873959381190187561.csv",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.002120|",
-              "WhenOpened": "2024-06-06T06:41:11.308Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 12,
-              "Title": "buildspec.yml",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\buildspec.yml",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\buildspec.yml",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\buildspec.yml",
-              "RelativeToolTip": "MyGymProgressApi\\buildspec.yml",
-              "ViewState": "AQIAAAkAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003775|",
-              "WhenOpened": "2024-06-04T04:35:32.9Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 4,
-              "Title": "appsettings.Development.json",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.Development.json",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\appsettings.Development.json",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.Development.json",
-              "RelativeToolTip": "MyGymProgressApi\\appsettings.Development.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAgAAABWAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-03T11:17:59.205Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "appsettings.json",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.json",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\appsettings.json",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.json",
-              "RelativeToolTip": "MyGymProgressApi\\appsettings.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA8AAAADAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-03T10:39:43.587Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 14,
-              "Title": "ExerciseCsv.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Handlers\\CsvHandler\\Records\\ExerciseCsv.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Handlers\\CsvHandler\\Records\\ExerciseCsv.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Handlers\\CsvHandler\\Records\\ExerciseCsv.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Handlers\\CsvHandler\\Records\\ExerciseCsv.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAA6wAoAAAAqAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:25:01.442Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 15,
-              "Title": "TrainingSessionCsv.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Handlers\\CsvHandler\\Records\\TrainingSessionCsv.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Handlers\\CsvHandler\\Records\\TrainingSessionCsv.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Handlers\\CsvHandler\\Records\\TrainingSessionCsv.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Handlers\\CsvHandler\\Records\\TrainingSessionCsv.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:24:57.346Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 11,
-              "Title": "TrainingRoute.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Routes\\TrainingRoute.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Routes\\TrainingRoute.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Routes\\TrainingRoute.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Routes\\TrainingRoute.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAACkAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:24:53.059Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Startup.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Startup.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Startup.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Startup.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Startup.cs",
-              "ViewState": "AQIAAA0AAAAAAAAAAAAmwDEAAAAmAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:24:22.872Z",
-              "EditorCaption": ""
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 9,
               "Title": "TrainingController.cs",
               "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Controllers\\TrainingController.cs",
               "RelativeDocumentMoniker": "MyGymProgressApi\\Controllers\\TrainingController.cs",
               "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Controllers\\TrainingController.cs",
               "RelativeToolTip": "MyGymProgressApi\\Controllers\\TrainingController.cs",
-              "ViewState": "AQIAACgAAAAAAAAAAAAAAAYAAAAaAAAA",
+              "ViewState": "AQIAAFUAAAAAAAAAAAAIwG4AAAA/AAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-05-17T07:13:12.779Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 13,
-              "Title": "Program.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Program.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Program.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Program.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Program.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAA4AAABNAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:24:42.305Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 2,
-              "Title": "appsettings.Production.json",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.Production.json",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\appsettings.Production.json",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\appsettings.Production.json",
-              "RelativeToolTip": "MyGymProgressApi\\appsettings.Production.json",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAIAAAAaAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
-              "WhenOpened": "2024-06-05T08:34:08.23Z",
+              "WhenOpened": "2024-05-17T07:13:12.779Z",
               "EditorCaption": ""
-            },
+            }
+          ]
+        },
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 0,
+          "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 10,
-              "Title": "AppDbContext.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\AppDbContext.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\AppDbContext.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\AppDbContext.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Data\\AppDbContext.cs",
-              "ViewState": "AQIAADcAAAAAAAAAAAAcwFIAAAAIAAAA",
+              "DocumentIndex": 0,
+              "Title": "Startup.cs",
+              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Startup.cs",
+              "RelativeDocumentMoniker": "MyGymProgressApi\\Startup.cs",
+              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Startup.cs",
+              "RelativeToolTip": "MyGymProgressApi\\Startup.cs",
+              "ViewState": "AQIAAC8AAAAAAAAAAAAIwDcAAAASAAAA",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:24:13.938Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 16,
-              "Title": "Performance.cs",
-              "DocumentMoniker": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\Performance.cs",
-              "RelativeDocumentMoniker": "MyGymProgressApi\\Data\\Models\\Performance.cs",
-              "ToolTip": "H:\\Personal Repo\\MyGymProgress\\MyGymProgressApi\\Data\\Models\\Performance.cs",
-              "RelativeToolTip": "MyGymProgressApi\\Data\\Models\\Performance.cs",
-              "ViewState": "AQIAAAAAAAAAAAAAAAAAAAAAAAAAAAAA",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2024-06-03T08:23:45.78Z"
+              "WhenOpened": "2024-06-06T09:56:52.605Z",
+              "EditorCaption": ""
             }
           ]
         }

@@ -12,7 +12,7 @@ const TrainingSessions = () => {
   useEffect(() => {
     const fetchSessions = async () => {
       try {
-        const res = await axios.get(`${BASE_API_URL}/api/trainingSession/page/${currentPage}`);
+        const res = await axios.get(`${BASE_API_URL}/api/Training/page/${currentPage}`);
         setSessions(res.data);
       } catch (err) {
         console.error("Error fetching data: ", err);

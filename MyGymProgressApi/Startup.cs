@@ -1,7 +1,6 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.OpenApi.Models;
 using MyGymProgress.Data;
-using MyGymProgress.Routes;
 using Swashbuckle.AspNetCore.SwaggerGen;
 
 namespace MyGymProgress
@@ -54,7 +53,7 @@ namespace MyGymProgress
             {
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "My Gym Progress API", Version = "v1" });
 
-                // Configure Swagger to understand IFormFile
+                //Configure Swagger to understand IFormFile
                 c.SchemaFilter<SwaggerFileSchemaFilter>();
             });
 
@@ -80,9 +79,8 @@ namespace MyGymProgress
         app.UseCors("AllowAnyOrigin");
 
             app.UseEndpoints(endpoints =>
-            {
-                //endpoints.MapControllers();
-                endpoints.MapTrainingRoutes();
+            { 
+                endpoints.MapControllers();
 
                 //Map health checks to a specific endpoint
                 endpoints.MapHealthChecks("/");
