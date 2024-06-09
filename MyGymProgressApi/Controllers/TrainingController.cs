@@ -2,9 +2,9 @@
  * Contains actions for Training Sessions
  */
 
+using backend.Data.Models;
 using CsvHelper;
 using CsvHelper.Configuration;
-using backend.Data.Models;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using MyGymProgress.Data;

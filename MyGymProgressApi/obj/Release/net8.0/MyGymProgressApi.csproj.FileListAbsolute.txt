@@ -1,6 +1,5 @@
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\appsettings.Development.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\appsettings.json
-H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\appsettings.Production.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\Dockerrun.aws.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\MyGymProgressApi.exe
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\bin\Release\net8.0\MyGymProgressApi.deps.json

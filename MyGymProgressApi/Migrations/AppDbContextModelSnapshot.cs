@@ -17,7 +17,7 @@ namespace MyGymProgressApi.Migrations
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "8.0.5")
+                .HasAnnotation("ProductVersion", "8.0.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 63);
 
             NpgsqlModelBuilderExtensions.UseIdentityByDefaultColumns(modelBuilder);
@@ -55,7 +55,7 @@ namespace MyGymProgressApi.Migrations
                         new
                         {
                             Id = 1,
-                            Date = new DateTime(2024, 5, 19, 5, 20, 33, 263, DateTimeKind.Utc).AddTicks(5720),
+                            Date = new DateTime(2024, 6, 9, 1, 59, 43, 368, DateTimeKind.Utc).AddTicks(471),
                             Notes = "Full body workout focusing on form",
                             WorkoutDuration = "1 hour",
                             WorkoutName = "Full Body Routine",

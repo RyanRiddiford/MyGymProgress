@@ -1,7 +1,6 @@
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.exe
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\appsettings.Development.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\appsettings.json
-H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\appsettings.Production.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\Dockerrun.aws.json
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.dll
 H:\Personal Repo\MyGymProgress\MyGymProgressApi\publish\MyGymProgressApi.runtimeconfig.json

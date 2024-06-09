@@ -94,14 +94,14 @@ namespace MyGymProgress
             app.UseCors("AllowAnyOrigin");
 
             app.UseEndpoints(endpoints =>
-            { 
+            {
                 endpoints.MapControllers();
 
                 //Map health checks to a specific endpoint
                 endpoints.MapHealthChecks("/health");
             });
         }
-public class SwaggerFileSchemaFilter : ISchemaFilter
+        public class SwaggerFileSchemaFilter : ISchemaFilter
         {
             public void Apply(OpenApiSchema schema, SchemaFilterContext context)
             {
